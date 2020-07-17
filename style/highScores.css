@@ -1,0 +1,72 @@
+.container {
+    background-size: 100vh 100vw;
+    display: flex;
+    margin: 400px 50px 0 50px;
+    justify-content: center;
+    align-self: center;
+}
+
+h1 {
+    color: #e6d454;
+    text-shadow:0px 1px 0px #ffee66;
+}
+
+#finalScore{
+    font-size: 80px;
+    margin-bottom: 30px;
+}
+    
+#highScoresList {
+    list-style-type: decimal;
+    padding-left: 0;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: rgb(35, 139, 21);
+    background-color: seashell;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+#highScores{
+    text-align: center;
+}
+
+body{
+    background-image: url('https://panolam.com/wp-content/uploads/2019/03/Science-Lab-Chalkboard.jpg');
+    background-size: 100%;
+    background-position: center;
+}
+
+.btn {
+    box-shadow: 0px 1px 0px 0px #fff6af;
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	background-color:#ffec64;
+	border-radius:6px;
+	border:1px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size: 40px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #ffee66;
+    width: 300px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150rem;
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}

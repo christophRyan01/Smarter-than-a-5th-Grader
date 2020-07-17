@@ -1,0 +1,85 @@
+body {
+    background-image: url('https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/361400/0a9b7a7dc8d96a296bca46f95544e9cf153b7be3.jpg');
+}
+
+
+
+.container{
+    margin-top: 200px ;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+}
+
+h1 {
+    display: flex;
+    align-content: center;
+    margin: 0 80px 30px 80px;
+    box-shadow: 0px 1px 0px 0px #fff6af;
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	background-color:#ffec64;
+	border-radius:6px;
+	border: 2px solid #ffaa22;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 80px;
+    color: #333;
+}
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+input {
+    margin-bottom: 15px;
+    width: 315px;
+    padding: 2px;
+    font-size: 50px;
+    border: 1px solid black;
+    border-radius: 6px;
+    box-shadow: 0 3px 10px 0 rgba(236, 133, 37, 0.75);
+}
+input::placeholder {
+    color: #333;
+    
+}
+
+/* buttons */
+.btn {
+    box-shadow: 0px 1px 0px 0px #fff6af;
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	background-color:#ffec64;
+	border-radius:6px;
+	border:1px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size: 40px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #ffee66;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150rem;
+}
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+.btn:active {
+	position:relative;
+	top:1px;
+}

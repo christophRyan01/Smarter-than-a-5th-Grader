@@ -1,0 +1,249 @@
+body.gamePage{
+    background-image: url('https://www.neisd.net/cms/lib/TX02215002/Centricity/Domain/250/5th_grader_1280x720.jpg');
+    background-size: 100vw 100vh;
+}
+
+h1 {
+    font-size: 2.8rem;
+    color: #333;
+    margin-bottom: 5rem;
+}
+
+h1 > span {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.3rem solid gold;
+    background-color: white;
+    height: 150px;
+    border-radius: 10px;
+   
+}
+
+h3{
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
+    font-weight: 700;
+}
+
+h4{
+    margin-bottom: 1rem;
+}
+
+
+
+/* Utilities */
+
+.containerGame {
+    background-size: 100vh 100vw;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding-bottom: 20px;
+    padding: 10rem;
+    margin-top: 60px;
+}
+
+.containerGame > * {
+    width: 100%;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+
+
+/* Score and Timer!! */
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px 40px 0 40px;
+}
+
+.scores{
+    display: flex; 
+}
+
+#countdown{
+    font-size: 40px;
+}
+
+
+.containerOutput:first-child{
+    margin-right: 10px;
+}
+
+.containerOutput {
+    display: grid;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: white;
+    border: 0.1rem solid black;
+    width: 200px;
+    height: 100px;
+    font-size: 28px;
+    border-radius: 20px;
+}
+.outputMainText {
+    display: flex;
+    margin: 0 0 0 0;
+    font-size: 40px;
+}
+
+#score {
+    margin-left: 60px;
+}
+
+/* Score and Timer Ends here!! */
+
+.hidden {
+    display: none;
+}
+
+/* Buttons */
+.buttonsContainer{
+    display: flex;
+    align-content: center;
+}
+
+.buttonsLeft{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.buttonsRight{
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+
+.choice-containerL {
+    display: flex;
+    justify-content: unset;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    font-size: 1.8rem;
+    margin: 5px;
+    box-shadow: 0px 1px 0px 0px #fff6af;
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	background-color:#ffec64;
+	border-radius:6px;
+    border:1px solid #ffaa22;
+    color:#333333;
+	font-family:Arial;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #ffee66;
+}
+
+.choice-containerR {
+    display: flex;
+    justify-content: unset;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    font-size: 1.8rem;
+    margin: 5px;
+    box-shadow: 0px 1px 0px 0px #fff6af;
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	background-color:#ffec64;
+	border-radius:6px;
+    border:1px solid #ffaa22;
+    color:#333333;
+	font-family:Arial;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #ffee66;
+}
+
+.choice-containerL:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150rem;
+}
+
+.choice-containerR:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150rem;
+}
+
+.choice-prefix {
+    height: 100%;
+    padding: 1.4rem 2.5rem;
+    /* border: 0.1rem solid black; */
+    background-color: white;
+    color: black;
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+
+.choice-text {
+    padding: 1.2rem;
+    width: 100%;
+}
+/* Choice Buttons end!! */
+
+
+/* Song Buttons */
+
+button {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 1px 0px 0px #fff6af;
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	background-color:#ffec64;
+	border-radius:6px;
+	border:1px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size: 20px;
+	font-weight:bold;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #ffee66;
+    width: 100px;
+    text-align: center;
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150rem;
+}
+
+button[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+.containerOutput:nth-child(2){
+    display: flex;
+    flex-direction: column;
+
+}
+
+#song{
+    display: grid;
+}
+
+#pause{
+    display: grid;
+}

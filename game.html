@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game LayOut - Play</title>
+    <!-- <link rel="stylesheet" href="style/style.css"> -->
+    <link defer rel="stylesheet" href="style/game.css">
+</head>
+<body class="gamePage">
+
+    <div class="header">
+        <div class="scores">
+            <div class="containerOutput" > 
+                <p class="prefixScore"> Player Score:   </p>
+                <h1 class= "outputMainText" id="score" > 0 </h1> 
+            </div>
+            <div class="containerOutput" > 
+                <p class="prefixCPU"> Cpu Score:  </p>
+                <h1 class= "outputMainText"id="cpuScore"> 0 </h1> 
+            </div> 
+        </div>
+        <div class="containerOutput" >
+            <button id="song" class="Play song">Play</button>
+            <button id="pause" class="Pause Song">Pause</button>
+        </div>
+        <div class="containerOutput">
+            <div id="countdown"></div>
+        </div>
+    </div>
+        
+    <div class="containerGame">
+        <div id="game" class="justify-center flex-column">
+            <h2 id="question">What is the answer to this questions?</h2>
+            <div class=buttonContainer>
+                <div class="buttonsLeft">
+                    <div class= "choice-containerL">
+                        <p class="choice-prefix">A</p>
+                        <p class="choice-text" data-number="1">Choice 1</p> 
+                    </div>
+                    <div class= "choice-containerL">
+                        <p class="choice-prefix">B</p>
+                        <p class="choice-text" data-number="2">Choice 2</p> 
+                    </div>
+                </div>
+                <div class= buttonsRight>
+                    <div class= "choice-containerR">
+                        <p class="choice-prefix">C</p>
+                        <p class="choice-text" data-number="3">Choice 3</p> 
+                    </div>
+                    <div class= "choice-containerR">
+                        <p class="choice-prefix">D</p>
+                        <p class="choice-text" data-number="4">Choice 4</p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script defer src="js/game.js"></script>
+    
+</body>
+</html>
+
+    
+    
