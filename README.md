@@ -29,9 +29,12 @@ https://www.scarymommy.com/are-you-smarter-than-a-fifth-grader-questions/
     High Scores Page:
     - High Score List top 10
     
+Game link:https://christophryan01.github.io/smarter-than-a-5th-Grader/
 
-![Wire Frame] (screenShots/wire.Frame.png)
-![Start Screen] (screenShots/startScreen.png)
-![Game Page] (screenShots/gamePage.png)
-![End Page] (screenShots/endPage.png)
-![High Scores] (screenShots/highScores.png)
+![Wire Frame](https://github.com/christophRyan01/smarter-than-a-5th-Grader/blob/master/screenShots/wireFrame.png)
+![Start Screen](https://github.com/christophRyan01/smarter-than-a-5th-Grader/blob/master/screenShots/startScreen.png)
+![Game Page](https://github.com/christophRyan01/smarter-than-a-5th-Grader/blob/master/screenShots/gamePage.png)
+![End Page](https://github.com/christophRyan01/smarter-than-a-5th-Grader/blob/master/screenShots/endPage.png)
+![High Scores](https://github.com/christophRyan01/smarter-than-a-5th-Grader/blob/master/screenShots/highScores.png)
+
+
