@@ -30,8 +30,8 @@ https://www.scarymommy.com/are-you-smarter-than-a-fifth-grader-questions/
     - High Score List top 10
     
 
-!["Wire Frame"] ("wire.Frame.png")
-!["Start Screen"] ("startScreen.png")
-!["Game Page"] ("gamePage.png")
-!["End Page"] ("endPage.png")
-!["High Scores"] ("highScores.png")
+![Wire Frame] (screenShots/wire.Frame.png)
+![Start Screen] (screenShots/startScreen.png)
+![Game Page] (screenShots/gamePage.png)
+![End Page] (screenShots/endPage.png)
+![High Scores] (screenShots/highScores.png)
