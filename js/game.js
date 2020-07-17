@@ -458,7 +458,7 @@ const questions = [
             correctAnswer: '2'
     },
     {
-        question:'What do the sripes on the flag mean?',
+        question:'What do the stripes on the flag mean?',
         
             choice1:'The states',
             choice2:'Thirteen colonies',
@@ -714,11 +714,11 @@ increaseScore = num => {
     scoreNumber.innerText = score;
 };
 
-//CPU Score Increase 
+// CPU Score Increase 
 increaseCPUScore = num => {
     cpuScore += num;
     cpuScoreNumber.innerText = cpuScore;
-}
+};
 
 // Clock Count Down
 let time = startingMinutes * 60;
@@ -738,7 +738,7 @@ function updateCountDown() {
         localStorage.setItem('mostRecentScore', score);
         return window.location.assign("end.html");
     }
-}
+};
 
 
 // Sounds!!
@@ -754,7 +754,7 @@ function playSong() {
     songBtn.removeEventListener("click", play);
     songBtn.addEventListener("click", toggleSong);
     songBtn.innerHTML="Pause Song"
-}
+};
 
 function toggleSong() {
     if (song.paused) {
@@ -765,7 +765,7 @@ function toggleSong() {
         songBtn.pause();
         songBtn.innerHTML = "Play Song"
     }
-}
+};
 
 let wrongSound = new Audio();
 wrongSound.src = "audio/funnyWrong.wav";
