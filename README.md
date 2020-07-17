@@ -31,8 +31,8 @@ https://www.scarymommy.com/are-you-smarter-than-a-fifth-grader-questions/
     
     [Game link] (file:///Users/christophergotschall/Desktop/sei29/w3/smarter-than-a-5th-Grader/index.html)
 
-![Wire Frame] (screenShots/wire.Frame.png)
-![Start Screen] (screenShots/startScreen.png)
-![Game Page] (screenShots/gamePage.png)
-![End Page] (screenShots/endPage.png)
-![High Scores] (screenShots/highScores.png)
+![] (screenShots/wire.Frame.png)
+![] (screenShots/startScreen.png)
+![] (screenShots/gamePage.png)
+![] (screenShots/endPage.png)
+![] (screenShots/highScores.png)
