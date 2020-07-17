@@ -10,7 +10,7 @@ let score = 0;
 let cpuScore = 0;
 let questionCounter = 0;
 let availableQuestions = [];
-let startingMinutes = .5;
+let startingMinutes = 5;
 
 // Question Pool
 const questions = [
