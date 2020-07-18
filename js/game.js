@@ -514,7 +514,7 @@ const questions = [
             correctAnswer: '1'
     },
     {
-        question:'What is 5 ^ 2' ?,
+        question:'What is 5 ^ 2 ?', 
         
             choice1:'10',
             choice2:'15',
