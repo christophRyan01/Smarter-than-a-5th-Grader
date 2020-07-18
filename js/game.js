@@ -1,5 +1,7 @@
 const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choice-text"));
+const prefixChoices = Array.from(document.getElementsByClassName("choice-prefix"))
+const buttonContainer = Array.from(document.getElementsByClassName("buttonContainer"))
 const scoreNumber = document.getElementById('score');
 const cpuScoreNumber = document.getElementById('cpuScore');
 const counterClock = document.getElementsByClassName('countdown')
@@ -22,7 +24,7 @@ const questions = [
             choice3: '1 January, 1901',
             choice4: '1 January, 2020',
             correctAnswer: '3'
-},
+    },
     {
         question: 'If you cut a quarter into thirds, how many pieces would you have?',
         
@@ -51,7 +53,7 @@ const questions = [
             correctAnswer: '3'
     },
     {
-        question:'What makes a square a square? ',
+        question:'What makes a square, a square? ',
         
             choice1:'Four Edges',
             choice2:'Four equal sides',
@@ -231,7 +233,7 @@ const questions = [
             correctAnswer: '2'
     },
     {
-        question:'What number is the Roman numeral XVI? ',
+        question:'What number is the Roman numeral XVI?',
         
             choice1:'15',
             choice2:'12',
@@ -249,7 +251,7 @@ const questions = [
             correctAnswer: '1'
     },
     {
-        question:'When writing out a fraction, the numbers above and below the vinculum are called the… ',
+        question:'When writing out a fraction, the numbers above and below the vinculum are called the...? ',
         
             choice1:'Half and half',
             choice2:'Up and Down',
@@ -305,7 +307,7 @@ const questions = [
             choice4:'138',
             correctAnswer: '3'
     },{
-        question:'The interior angles of a triangle always sum to… ?',
+        question:'The interior angles of a triangle always sum to...?',
         
             choice1:'180 degress',
             choice2:'150 degress',
@@ -314,7 +316,7 @@ const questions = [
             correctAnswer: '1'
     },
     {
-        question:' 23 x 4',
+        question:'23 x 4',
         
             choice1:'112',
             choice2:'160',
@@ -440,7 +442,7 @@ const questions = [
             correctAnswer: '2'
     },
     {
-        question:'Who is the creator of the classic book characters Tom Sawyer and Huckleberry Finn? ',
+        question:'Who is the creator of the classic book characters Tom Sawyer and Huckleberry Finn?',
         
             choice1:'Ernest Hemingway',
             choice2:'Oscar Wilde',
@@ -512,7 +514,7 @@ const questions = [
             correctAnswer: '1'
     },
     {
-        question:'What is 5 ^ 2',
+        question:'What is 5 ^ 2' ?,
         
             choice1:'10',
             choice2:'15',
@@ -639,7 +641,8 @@ const questions = [
     },
 
 ]
-console.log(questions.length)
+// console.log(questions.length)
+
 
 // CONST
 const CORRECT_COUNT = 10
@@ -679,7 +682,7 @@ getNewQuestions = () => {
     
 };
 
-choices.forEach( choice => {
+buttonContainer.forEach( choice => {
     choice.addEventListener("click", e => {
         if (!acceptingAnswers) return;
        
@@ -693,18 +696,18 @@ choices.forEach( choice => {
 
         if (newClass === 'correct') {
             increaseScore(CORRECT_COUNT);
-        }
+            correctSound.play()
+        };
 
         if (newClass === 'incorrect') {
             increaseCPUScore(CORRECT_COUNT)
-        }
-        if (newClass === 'incorrect') {
             wrongSound.play()
-        }
+        };
         
         setTimeout( () => {
-            getNewQuestions()
-        }, 500);
+        getNewQuestions()
+        },  500);
+        
     });
 });
 
@@ -740,7 +743,6 @@ function updateCountDown() {
     }
 };
 
-
 // Sounds!!
 let sound = new Audio('audio/fruitLoop.mp3');
 let soundBtn = document.querySelector('#song');
@@ -748,6 +750,12 @@ soundBtn.addEventListener("click", () => sound.play());
 
 let pauseBtn = document.querySelector('#pause');
 pauseBtn.addEventListener("click", () => sound.pause());
+
+let correctSound = new Audio();
+correctSound.src = "audio/correct.wav";
+
+let wrongSound = new Audio();
+wrongSound.src = "audio/wrong.wav";
 
 function playSong() {
     song.play();
@@ -766,9 +774,5 @@ function toggleSong() {
         songBtn.innerHTML = "Play Song"
     }
 };
-
-let wrongSound = new Audio();
-wrongSound.src = "audio/funnyWrong.wav";
-
 
 startGame();
